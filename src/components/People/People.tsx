@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, memo} from "react";
 import {getAllUserApi} from "../../peopleApis/getAllUserAPI";
 import {Grid} from "@mui/material";
 import {UserListCard} from "./UserListCard";
@@ -33,4 +33,5 @@ const People = () => {
    );
 };
 
-export default People;
+const memoizedPeople = memo(People);
+export default memoizedPeople;
