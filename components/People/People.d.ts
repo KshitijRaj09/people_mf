@@ -1,3 +1,3 @@
 import React from "react";
-declare const People: () => React.JSX.Element;
-export default People;
+declare const memoizedPeople: React.MemoExoticComponent<() => React.JSX.Element>;
+export default memoizedPeople;
